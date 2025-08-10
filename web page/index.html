@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+        }
+        .logo{
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .nav{
+            width: 100vw;
+            height: 6.6rem;
+            border: 1px solid black;
+            display: flex;
+            /* flex-wrap: wrap; */
+            justify-content: space-evenly;
+            gap: 2rem;
+            background-color: black;
+        }
+        .box1{
+            display: none;
+            gap: 1.7rem;
+            height: 6rem;
+            align-items: center;
+
+            flex-wrap: wrap;
+            font-size: 25px;
+            font-family:Arial, Helvetica, sans-serif;
+            position: relative;
+            top: 20px;
+            
+        }
+       
+        li{
+            list-style-type: none;
+        }
+        .box1 a{
+            text-decoration: none;
+            color: black;
+            font-weight:500;
+            transform: color 0.1s;
+            color: white;
+
+            
+        }
+        .box1 a:hover{
+            color:blue;
+        }
+        #button{
+            height: 40px;
+            border: none;
+            border-radius: 10px;
+            padding:0.5rem;
+            display: none;
+            flex-wrap: wrap;
+            background-color: blue;
+            color: white;
+            font-size: larger;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            width: 9.7rem;
+            position: relative;
+            top:3.1em ;
+            transition: all;
+            transition-duration: 3s;
+            cursor: pointer;
+            padding-left: 28px;
+        }
+
+        .left a{
+            display: flex;
+            justify-content: start;
+
+        }
+        h2{
+            position: relative;
+            top: 40px;
+            font-size: xx-large;
+            color: white;
+        }
+        #button:hover{
+            background-color:red;
+            transform:rotate(-5deg) scale(1.3);
+        }
+         @media screen and (min-width:768px) {
+            .box1{
+                display: flex;
+            }
+            #button{
+                display: flex;
+            }
+            
+        }   
+        .content{
+            width: 100%;
+            height: 500px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+        }
+        .herosection{
+            width: 70%;
+            display: flex;
+            border: 1px solid blue;
+            justify-content: space-evenly;
+            gap: 300px;
+
+        }
+        .leftbox{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-left:80px;
+        }
+        .rightbox img{
+            margin: 50px;
+            height: 90%;
+            margin-top: 25px;
+            width: 500px;
+            border-radius: 30px;
+        }
+        .buttons1{
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+        }
+        #start{
+            font-size: 2vw;
+            border: 1px solid brown;
+            border-radius: 5px;
+            background-color: red;
+            color: white;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="left">
+                <a href="#logo">
+                <img src="Logo-design-illustration-on-transparent-background-PNG-removebg-preview.png" alt="logo" class="logo" width="100px">
+            <h2>Studycode</h2>
+            </a>
+            </div>
+            
+            <nav class="navbar">
+                <ul class="box1">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#features">features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#Blog">Blog</a></li>
+                    <li><a href="#About">About</a></li>
+                </ul>
+            </nav>
+                <button type="button" id="button">Contact us</button>
+            <button type="submit" ></button>
+        </div>
+        <div class="content">
+            <section class="herosection">
+                <div class="leftbox">
+                        <p>Very proud to introduce</p>
+                        <h1>Seamless learning for Brighter Futures</h1>
+                        <p>Our innovative platform offers an effortless and Seamless
+                            approach to learning,empowering students of all ages to 
+                            simplify education and unlock your all potentials.
+                        </p>
+                        <div class="buttons1">
+                            <button type="button" id="start">Start now</button>
+                            <button type="button" id="take">Take tour</button>
+                        </div>
+                </div>
+                <div class="rightbox">
+                        <img src="tech.png" alt="image" width="400px">
+                </div>
+            </section>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            
+        }
+        .container{
+            width: 100%;
+            height: 100vh; 
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            background:linear-gradient(#274552,#22444f,#2c5364);
+            
+        }
+        .box{
+            width: 400px;
+            height:480px;
+            border: 1px solid ;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            gap:20px;
+            flex-wrap:wrap;
+            background-color: white;
+            box-shadow: 4px 4px 4px 3px rgb(202, 226, 13),-4px -4px 4px 3px rgb(202, 226, 13);
+        
+            text-align: center;
+        }
+        .tech1{
+            border-top-left-radius:  20px;   
+            border-top-right-radius: 20px;
+            height: 180px;
+        }
+        .small{
+            width: 300px;
+            
+            border: 1px solid black;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 3px;
+            background-color: rgba(71, 99, 142, 0.838);
+            flex-wrap: wrap;
+           
+        }
+        #button{
+            width: 300px;
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: #110ec7c9;
+            height: 50px;
+            font-size: large;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+             box-shadow: 4px 4px 3px rgb(112, 101, 101) ;
+             cursor: pointer;
+             transition: all;
+             transition-duration: 1s;
+             transition-timing-function: linear;
+             transition-behavior:initial;
+        }
+        #button:hover{
+            background-color: aqua;
+            transform: scale(1.2);
+        }
+        .insta{
+            position: relative;
+            top: 13px;
+            
+        }
+        .tech{
+            position: relative;
+            left:45px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box ">
+            <img class="tech1" src="tech.png" alt="" >
+            <h2>Order Summary</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet error, dolore possimus dolores sunt sed.</p>
+            <div class="small tech">
+                <img src="insta.png" alt="" width="50px" height="50px">
+                <pre>Annual Plan
+$99.9/year
+                </pre>
+                <a class="insta" href="https://www.google.com">Change</a>
+
+            </div>
+            
+            <button class="tech" type="submit" id="button" >Proceed to payment</button>
+            
+            <h3>Cancel order</h3>
+
+
+        </div>
+
+    </div>
+</body>
+</html>
